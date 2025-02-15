@@ -62,6 +62,7 @@
             btnAggiungi.TabIndex = 2;
             btnAggiungi.Text = "Add";
             btnAggiungi.UseVisualStyleBackColor = true;
+            btnAggiungi.Click += btnAggiungi_Click;
             // 
             // lstResults
             // 
@@ -88,6 +89,7 @@
             btnAverage.TabIndex = 4;
             btnAverage.Text = "Media";
             btnAverage.UseVisualStyleBackColor = true;
+            btnAverage.Click += btnAverage_Click;
             // 
             // btnMinimum
             // 
