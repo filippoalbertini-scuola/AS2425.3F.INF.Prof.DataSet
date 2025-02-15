@@ -36,6 +36,7 @@
             btnAverage = new Button();
             btnMinimum = new Button();
             btnMaximum = new Button();
+            btnListValues = new Button();
             SuspendLayout();
             // 
             // label1
@@ -83,17 +84,16 @@
             // 
             // btnAverage
             // 
-            btnAverage.Location = new Point(289, 172);
+            btnAverage.Location = new Point(292, 278);
             btnAverage.Name = "btnAverage";
             btnAverage.Size = new Size(112, 43);
             btnAverage.TabIndex = 4;
             btnAverage.Text = "Media";
             btnAverage.UseVisualStyleBackColor = true;
-            btnAverage.Click += btnAverage_Click;
             // 
             // btnMinimum
             // 
-            btnMinimum.Location = new Point(289, 258);
+            btnMinimum.Location = new Point(292, 327);
             btnMinimum.Name = "btnMinimum";
             btnMinimum.Size = new Size(112, 43);
             btnMinimum.TabIndex = 4;
@@ -102,12 +102,22 @@
             // 
             // btnMaximum
             // 
-            btnMaximum.Location = new Point(289, 347);
+            btnMaximum.Location = new Point(292, 376);
             btnMaximum.Name = "btnMaximum";
             btnMaximum.Size = new Size(112, 43);
             btnMaximum.TabIndex = 4;
             btnMaximum.Text = "Max";
             btnMaximum.UseVisualStyleBackColor = true;
+            // 
+            // btnListValues
+            // 
+            btnListValues.Location = new Point(292, 139);
+            btnListValues.Name = "btnListValues";
+            btnListValues.Size = new Size(112, 43);
+            btnListValues.TabIndex = 4;
+            btnListValues.Text = "Lista valori";
+            btnListValues.UseVisualStyleBackColor = true;
+            btnListValues.Click += btnListValues_Click;
             // 
             // Form1
             // 
@@ -116,6 +126,7 @@
             ClientSize = new Size(473, 452);
             Controls.Add(btnMaximum);
             Controls.Add(btnMinimum);
+            Controls.Add(btnListValues);
             Controls.Add(btnAverage);
             Controls.Add(lstResults);
             Controls.Add(btnAggiungi);
@@ -138,5 +149,6 @@
         private Button btnAverage;
         private Button btnMinimum;
         private Button btnMaximum;
+        private Button btnListValues;
     }
 }

@@ -25,5 +25,16 @@ namespace AS2425._3F.INF.Prof.DataSet
             for (int i = 0; i < nNumeri; i++)
                 somma += numeri[i];
         }
+
+        private void btnListValues_Click(object sender, EventArgs e)
+        {
+            // svuota la listbox
+            lstResults.Items.Clear();
+
+            // scorri i valori nell'array di numeri
+            for (int i = 0; i < nNumeri; i++)
+                // scrivili nella listbox
+                lstResults.Items.Add(numeri[i]);
+        }
     }
 }
