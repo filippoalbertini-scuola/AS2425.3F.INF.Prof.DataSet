@@ -100,6 +100,7 @@
             btnMinimum.TabIndex = 4;
             btnMinimum.Text = "Min";
             btnMinimum.UseVisualStyleBackColor = true;
+            btnMinimum.Click += btnMinimum_Click;
             // 
             // btnMaximum
             // 
@@ -109,6 +110,7 @@
             btnMaximum.TabIndex = 4;
             btnMaximum.Text = "Max";
             btnMaximum.UseVisualStyleBackColor = true;
+            btnMaximum.Click += btnMaximum_Click;
             // 
             // btnListValues
             // 

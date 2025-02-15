@@ -39,11 +39,34 @@ namespace AS2425._3F.INF.Prof.DataSet
                 // sommali
                 somma += numeri[i];
 
-            // svuota la listbox
-            lstResults.Items.Clear();
+            // scrivi il risultato
+            lstResults.Items.Add($"Media {somma / (double)nNumeri}");
+        }
+
+        private void btnMinimum_Click(object sender, EventArgs e)
+        {
+            int minimo = numeri[0];
+
+            // scorri i valori nell'array di numeri
+            for (int i = 1; i < nNumeri; i++)
+                if (numeri[i] < minimo)
+                    minimo = numeri[i];
 
             // scrivi il risultato
-            lstResults.Items.Add(somma/(double)nNumeri);
+            lstResults.Items.Add($"Minimo {minimo}");
+        }
+
+        private void btnMaximum_Click(object sender, EventArgs e)
+        {
+            int massimo = numeri[0];
+
+            // scorri i valori nell'array di numeri
+            for (int i = 1; i < nNumeri; i++)
+                if (numeri[i] > massimo)
+                    massimo = numeri[i];
+
+            // scrivi il risultato
+            lstResults.Items.Add($"Massimo {massimo}");
         }
     }
 }
