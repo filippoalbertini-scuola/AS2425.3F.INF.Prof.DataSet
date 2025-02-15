@@ -21,6 +21,12 @@ namespace AS2425._3F.INF.Prof.DataSet
 
         private void btnListValues_Click(object sender, EventArgs e)
         {
+            if (nNumeri == 0)
+            {
+                MessageBox.Show("Non ci sono numeri, per favore inseriscili...");
+                return;
+            }
+
             // svuota la listbox
             lstResults.Items.Clear();
 
@@ -32,6 +38,12 @@ namespace AS2425._3F.INF.Prof.DataSet
 
         private void btnAverage_Click(object sender, EventArgs e)
         {
+            if (nNumeri == 0)
+            {
+                MessageBox.Show("Non ci sono numeri, per favore inseriscili...");
+                return;
+            }
+
             int somma = 0;
 
             // scorri i valori nell'array di numeri
@@ -45,6 +57,12 @@ namespace AS2425._3F.INF.Prof.DataSet
 
         private void btnMinimum_Click(object sender, EventArgs e)
         {
+            if (nNumeri == 0)
+            {
+                MessageBox.Show("Non ci sono numeri, per favore inseriscili...");
+                return;
+            }
+
             int minimo = numeri[0];
 
             // scorri i valori nell'array di numeri
@@ -58,6 +76,12 @@ namespace AS2425._3F.INF.Prof.DataSet
 
         private void btnMaximum_Click(object sender, EventArgs e)
         {
+            if (nNumeri == 0)
+            {
+                MessageBox.Show("Non ci sono numeri, per favore inseriscili...");
+                return;
+            }
+
             int massimo = numeri[0];
 
             // scorri i valori nell'array di numeri
