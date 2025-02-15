@@ -19,13 +19,6 @@ namespace AS2425._3F.INF.Prof.DataSet
             nNumeri++;
         }
 
-        private void btnAverage_Click(object sender, EventArgs e)
-        {
-            int somma = 0;
-            for (int i = 0; i < nNumeri; i++)
-                somma += numeri[i];
-        }
-
         private void btnListValues_Click(object sender, EventArgs e)
         {
             // svuota la listbox
@@ -35,6 +28,22 @@ namespace AS2425._3F.INF.Prof.DataSet
             for (int i = 0; i < nNumeri; i++)
                 // scrivili nella listbox
                 lstResults.Items.Add(numeri[i]);
+        }
+
+        private void btnAverage_Click(object sender, EventArgs e)
+        {
+            int somma = 0;
+
+            // scorri i valori nell'array di numeri
+            for (int i = 0; i < nNumeri; i++)
+                // sommali
+                somma += numeri[i];
+
+            // svuota la listbox
+            lstResults.Items.Clear();
+
+            // scrivi il risultato
+            lstResults.Items.Add(somma/(double)nNumeri);
         }
     }
 }

@@ -90,6 +90,7 @@
             btnAverage.TabIndex = 4;
             btnAverage.Text = "Media";
             btnAverage.UseVisualStyleBackColor = true;
+            btnAverage.Click += btnAverage_Click;
             // 
             // btnMinimum
             // 
