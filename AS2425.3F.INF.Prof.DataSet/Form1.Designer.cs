@@ -97,6 +97,7 @@
             btnResults.TabIndex = 6;
             btnResults.Text = "...";
             btnResults.UseVisualStyleBackColor = true;
+            btnResults.Click += btnResults_Click;
             // 
             // Form1
             // 
