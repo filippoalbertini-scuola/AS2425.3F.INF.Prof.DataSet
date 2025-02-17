@@ -33,16 +33,14 @@
             btnAggiungi = new Button();
             lstResults = new ListBox();
             label2 = new Label();
-            btnAverage = new Button();
-            btnMinimum = new Button();
-            btnMaximum = new Button();
-            btnListValues = new Button();
+            cmbActions = new ComboBox();
+            btnResults = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(58, 48);
+            label1.Location = new Point(59, 31);
             label1.Name = "label1";
             label1.Size = new Size(63, 20);
             label1.TabIndex = 0;
@@ -50,14 +48,14 @@
             // 
             // txtNumero
             // 
-            txtNumero.Location = new Point(127, 45);
+            txtNumero.Location = new Point(128, 28);
             txtNumero.Name = "txtNumero";
             txtNumero.Size = new Size(172, 27);
             txtNumero.TabIndex = 1;
             // 
             // btnAggiungi
             // 
-            btnAggiungi.Location = new Point(305, 43);
+            btnAggiungi.Location = new Point(306, 26);
             btnAggiungi.Name = "btnAggiungi";
             btnAggiungi.Size = new Size(82, 29);
             btnAggiungi.TabIndex = 2;
@@ -68,69 +66,45 @@
             // lstResults
             // 
             lstResults.FormattingEnabled = true;
-            lstResults.Location = new Point(44, 139);
+            lstResults.Location = new Point(78, 134);
             lstResults.Name = "lstResults";
-            lstResults.Size = new Size(215, 284);
+            lstResults.Size = new Size(300, 284);
             lstResults.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(44, 106);
+            label2.Location = new Point(78, 101);
             label2.Name = "label2";
-            label2.Size = new Size(69, 20);
+            label2.Size = new Size(85, 20);
             label2.TabIndex = 0;
-            label2.Text = "Risultati :";
+            label2.Text = "Operazioni:";
             // 
-            // btnAverage
+            // cmbActions
             // 
-            btnAverage.Location = new Point(292, 278);
-            btnAverage.Name = "btnAverage";
-            btnAverage.Size = new Size(112, 43);
-            btnAverage.TabIndex = 4;
-            btnAverage.Text = "Media";
-            btnAverage.UseVisualStyleBackColor = true;
-            btnAverage.Click += btnAverage_Click;
+            cmbActions.FormattingEnabled = true;
+            cmbActions.Items.AddRange(new object[] { "Lista valori", "Media", "Minimo", "Massimo" });
+            cmbActions.Location = new Point(173, 97);
+            cmbActions.Name = "cmbActions";
+            cmbActions.Size = new Size(151, 28);
+            cmbActions.TabIndex = 5;
             // 
-            // btnMinimum
+            // btnResults
             // 
-            btnMinimum.Location = new Point(292, 327);
-            btnMinimum.Name = "btnMinimum";
-            btnMinimum.Size = new Size(112, 43);
-            btnMinimum.TabIndex = 4;
-            btnMinimum.Text = "Min";
-            btnMinimum.UseVisualStyleBackColor = true;
-            btnMinimum.Click += btnMinimum_Click;
-            // 
-            // btnMaximum
-            // 
-            btnMaximum.Location = new Point(292, 376);
-            btnMaximum.Name = "btnMaximum";
-            btnMaximum.Size = new Size(112, 43);
-            btnMaximum.TabIndex = 4;
-            btnMaximum.Text = "Max";
-            btnMaximum.UseVisualStyleBackColor = true;
-            btnMaximum.Click += btnMaximum_Click;
-            // 
-            // btnListValues
-            // 
-            btnListValues.Location = new Point(292, 139);
-            btnListValues.Name = "btnListValues";
-            btnListValues.Size = new Size(112, 43);
-            btnListValues.TabIndex = 4;
-            btnListValues.Text = "Lista valori";
-            btnListValues.UseVisualStyleBackColor = true;
-            btnListValues.Click += btnListValues_Click;
+            btnResults.Location = new Point(333, 98);
+            btnResults.Name = "btnResults";
+            btnResults.Size = new Size(45, 29);
+            btnResults.TabIndex = 6;
+            btnResults.Text = "...";
+            btnResults.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(473, 452);
-            Controls.Add(btnMaximum);
-            Controls.Add(btnMinimum);
-            Controls.Add(btnListValues);
-            Controls.Add(btnAverage);
+            ClientSize = new Size(453, 451);
+            Controls.Add(btnResults);
+            Controls.Add(cmbActions);
             Controls.Add(lstResults);
             Controls.Add(btnAggiungi);
             Controls.Add(txtNumero);
@@ -149,9 +123,7 @@
         private Button btnAggiungi;
         private ListBox lstResults;
         private Label label2;
-        private Button btnAverage;
-        private Button btnMinimum;
-        private Button btnMaximum;
-        private Button btnListValues;
+        private ComboBox cmbActions;
+        private Button btnResults;
     }
 }
